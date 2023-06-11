@@ -9,6 +9,7 @@ class Menu extends Phaser.Scene{
 
     }
     create(){
+        //gotta force an update hold up
         this.title = this.add.text(-500, 50, "Game Title").setFontSize(100);
         this.start = this.add.text(-300, 500, "Start", {color: '#ffffff'}).setFontSize(50);
         this.start.setInteractive();
