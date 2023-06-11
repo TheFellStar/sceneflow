@@ -425,7 +425,7 @@ class Pause extends Phaser.Scene {
         this.check.setInteractive();
         this.options = this.add.text(900, 700, "Options").setFontSize(30);
         this.options.setInteractive();
-        this.exit = this.add.test(900, 800, "Exit").setFontSize(30);
+        this.exit = this.add.text(900, 800, "Exit").setFontSize(30);
         this.exit.setInteractive();
 
         this.cont.on('pointerdown', () => {
