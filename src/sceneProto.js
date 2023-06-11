@@ -457,9 +457,9 @@ class Clues extends Phaser.Scene {
     }
     create(){
         this.add.text(800, 500, "Clues will appear here").setFontSize(50);
-        this.input.on('pointerdown'){
+        this.input.on('pointerdown', () => {
             this.scene.start('pause');
-        }
+        })
     }
 }
 
@@ -469,9 +469,9 @@ class Options extends Phaser.Scene {
     }
     create(){
         this.add.text(800, 500, "Options will go here").setFontSize(50);
-        this.input.on('pointerdown'){
+        this.input.on('pointerdown', () => {
             this.scene.start('pause');
-        }
+        })
     }
 }
 
